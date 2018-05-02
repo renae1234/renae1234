@@ -3,7 +3,16 @@
 
 
 
+
 }
 .slider-img{
 object-fit:cover;
+}
+
+.chickenhead{
+height:200px;
+background-size: cover;
+background-position: center;
+background-image: url(../images/1.jpg);
+
 }
