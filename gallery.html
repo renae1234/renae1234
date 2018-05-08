@@ -16,6 +16,10 @@ $(document).ready(function(){
 
     var clickedimage = $(this).attr("src");
     console.log(clickedimage);
+
+    $('#img_popup_window').modal('show');
+
+    $("#img-inside-popup").attr("src", clickedimage);
   });
 
 });
@@ -82,7 +86,7 @@ $(document).ready(function(){
 
 
           <!-- Modal -->
-          <div id="myModal" class="modal fade" role="dialog">
+          <div id="img_popup_window" class="modal fade" role="dialog">
             <div class="modal-dialog">
 
               <!-- Modal content-->
@@ -92,7 +96,7 @@ $(document).ready(function(){
                   <h4 class="modal-title">Modal Header</h4>
                 </div>
                 <div class="modal-body">
-                  <img src="images/1.jpg" class="img img-responsive">
+                  <img src="images/1.jpg" class="img img-responsive" id="img-inside-popup">
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
