@@ -13,10 +13,9 @@
 $(document).ready(function(){
 
   $(".popupimg").click(function(){
-alert("this is an image");
 
-console.log("okno");
-
+    var clickedimage = $(this).attr("src");
+    console.log(clickedimage);
   });
 
 });
